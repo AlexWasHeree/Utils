@@ -1,6 +1,14 @@
 import React from 'react';
 
-const Input = ({ label, type, name, value, onChange, error, onBlur }) => {
+export const Input = ({
+  label,
+  type,
+  name,
+  value,
+  onChange,
+  error,
+  onBlur,
+}) => {
   return (
     <div>
       <label htmlFor={name}>{label}</label>
@@ -16,5 +24,3 @@ const Input = ({ label, type, name, value, onChange, error, onBlur }) => {
     </div>
   );
 };
-
-export default Input;
